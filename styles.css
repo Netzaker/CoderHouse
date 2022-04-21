@@ -156,11 +156,7 @@ padding-top: 0px;
 @media only screen and (max-width: 767px) {
   .home__title{
     /*  align-self: center; */
-<<<<<<< HEAD
-    font-size: 5em!important;
-=======
     font-size: 4rem!important;
->>>>>>> ccc5e43872fb586b065753395d38377e31d621fb
    }  
 }
 
