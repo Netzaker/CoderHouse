@@ -41,7 +41,6 @@ img {
 .boxed-layout {
   max-width: 90%;
   justify-content: center !important;
-  border: solid 1px #781d12;
   margin: auto; }
 
 /* RESPONSIVE */
@@ -58,9 +57,9 @@ img {
 .l-header {
   width: 100%;
   position: fixed;
+  top: 0;
   z-index: var(100);
   z-index: 1;
-  border-bottom: solid 0.5px #c44536;
   box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15); }
   .l-header .navbar {
     background-color: #283d3b;
@@ -237,7 +236,9 @@ main .container-1 .EXP-container {
   main .container-1 .EXP-container .EXP-ux {
     width: 75%; }
   main .container-1 .EXP-container .EXP-img {
-    border-radius: .5rem; }
+    border-radius: .5rem;
+    width: 400px;
+    margin: auto; }
 
 /* ===== FIN EXPERINCIA =====*/
 /* ===== PROYECTOS =====*/
@@ -286,23 +287,20 @@ main .container-1 .EXP-container {
 /* ===== FIN CONTACT =====*/
 /* ===== FOOTER =====*/
 .footer {
-  background-color: var(--second-color);
+  background-color: #c44536;
   color: #fff;
   text-align: center;
-  font-weight: var(--font-semi);
+  font-weight: 200;
   padding: 2rem 0; }
 
 .footer__title {
   font-size: 2rem;
-  margin-bottom: var(--mb-4); }
-
-.footer__social {
-  margin-bottom: var(--mb-4); }
+  margin-bottom: 2rem; }
 
 .footer__icon {
   font-size: 1.5rem;
   color: #fff;
-  margin: 0 var(--mb-2); }
+  margin: 0 1rem; }
 
 /* ===== FIN FOOTER =====*/
 /* BOOTSTRAP */
@@ -8514,3 +8512,21 @@ fieldset:disabled .btn {
   .bd-grid {
     margin-left: auto;
     margin-right: auto; } }
+
+.section-clientes {
+  margin-top: 150px; }
+
+.bd-grid-contacto {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5%;
+  justify-content: center;
+  align-items: center;
+  width: calc(90%);
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin: auto; }
+  .bd-grid-contacto .google-maps {
+    margin-top: -120px;
+    justify-content: center;
+    align-items: center; }
