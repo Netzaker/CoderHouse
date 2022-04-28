@@ -1,0 +1,32 @@
+.l-header{
+    width: 100%;
+    position: fixed;
+    z-index: var($z-fixed);
+    z-index: 1;
+    border-bottom: solid 0.5px #c44536;
+    box-shadow: 0 1px 4px rgba(146,161,176,.15);
+    .navbar {
+    background-color: $second-color;
+    padding-left: 5%;
+    padding-right: 10%;
+        a {color: $third-color;
+            margin-right: $space15;            
+    }
+    }
+}
+
+body {
+    header{
+        nav{
+            bg-dark {
+                background-color: $second-color
+            }
+            .navbar-toggler {
+                border:none
+            }
+            .dropdown-menu {
+                background-color: $second-color;
+            }
+        }
+    }
+}

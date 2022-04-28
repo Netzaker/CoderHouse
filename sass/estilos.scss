@@ -1,0 +1,18 @@
+/* FONTS GOOGLE */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+/* ROOT */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import "root.scss";
+@import "header.scss";
+@import "carrusel.scss";
+@import "section.scss";
+@import "about.scss";
+@import "footer.scss";
+@import "article.scss";
+@import "habilidades.scss";
+@import "bootstrap.scss";

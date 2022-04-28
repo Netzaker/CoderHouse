@@ -5,14 +5,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+        <link rel="stylesheet" href="estilos/sass.css">
 <!--=====  llamado iconos ===== -->
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-<!--=====  llamado BOOTSTRAP ===== -->
+<!--=====  llamado JS BOOTSTRAP ===== -->
          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 <!--=====  llamado css cascada sobre booststrap ===== -->
-<link rel="stylesheet" href="styles.css">
+
 
         <title>RedWoodPier</title>
     </head>
@@ -20,15 +19,15 @@
 
          <!-- HEADER -->
          <header class="l-header">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark>
                 <div class="container-fluid">
-                  <a class="navbar-brand" href="#"><img src="img/logo_redwood-colores.svg" alt="" width="250"></a>
+                  <a class="navbar-brand" href="index.html"><img class="logo-home" src="img/logo_redwood-blanco-01.svg" alt="" width="250"></a>
                   
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav me-auto">
                       <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
                       </li>
@@ -56,39 +55,53 @@
                         <a class="nav-link" href="login.html">Clientes</a>
                       </li>
                     </ul>
-                    <form class="d-flex">
-                      <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                      <button class="btn btn-outline-success" type="submit">Buscar</button>
-                    </form>
                   </div>
                 </div>
               </nav>
         </header>
          <!-- =====  FIN HEADER ===== -->
         <main>
-            <div class="fondo-gradiente">
-            <!--===== CUERPO DE LA WEB =====-->
-            <section class="home bd-grid" id="home">
-                <div class="home__data">
-                    <h1 class="home__title">Cambia<br>la <span class="home__title-color">Logística</span><br> de la Minería</h1>
-                    <a href="#contacto" class="button escribir">Escríbenos</a>
-                </div>
-                <div class="home__img">    
-                    <img src="img/ingeniero.png" alt="">
-                </div>
+            <section class="container-1">
+                <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="/img/fondo-mineria.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-md-block">
+                          <h2>Cambia la foma de hacer<br><strong>logística</strong> en tu empresa</h2>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis atque dicta ex voluptas nam architecto, doloremque corrupti consequuntur cumque hic, ea culpa illum, reprehenderit est molestias repellendus laudantium quis veniam nesciunt! Corporis, necessitatibus? Debitis ducimus incidunt ut expedita at amet numquam. Repellendus dolorem nisi amet minus dolor cupiditate, officia sequi.</p>
+                          <button class="service-boton"><a href="#nosotros">Explorar</a></button> 
+                        </div>
+                      </div>
+                      <div class="carousel-item" data-bs-interval="2000">
+                        <img src="/img/fondo-mineria.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-md-block">
+                          <h2>Second slide label</h2>
+                          <p>Some representative placeholder content for the second slide.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </button>
+                  </div>
+
             </section>
+
         </div>
             <!--===== NOSOTROS =====-->
-            <section class="about section " id="nosotros">
+            <section class="section-2" id="nosotros">
                 <h2 class="section-title">Sobre Nosotros</h2>
 
                 <div class="about__container bd-grid">
                     <div class="about__img">
-                        <img src="img/nosotros.png" alt="">
+                        <img src="img/nosotros.png" alt="descripción detallada de la foto">
                     </div>
                     
                     <div>
-                        <h2 class="about__subtitle">Expertos en Optimización</h2>
+                        <h2 class="about__subtitle">Expertos en <strong>Optimización</strong></h2>
                         <p class="about__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate cum expedita quo culpa tempora, assumenda, quis fugiat ut voluptates soluta, aut earum nemo recusandae cumque perferendis! Recusandae alias accusamus atque.</p>           
                     </div>                                   
                 </div>
@@ -96,47 +109,54 @@
 <!-- servicios 2 -->
 <h2 class="section-title">Servicios</h2>
 <section class="container-2" id="servicios">
-
     <article class="item">
         <h3>Agilidad</h3>
-        <p>Vuélvete ágil, más flexible y preocúpate intensamente de tus clientes</p> 
+        <p>Vuélvete ágil, más flexible y preocúpate intensamente de tus clientes</p>
+        <button class="service-boton"><a href="#">Ver más</a></button> 
     </article>
     <article class="item">
         <h3>Costos de Transformación</h3>
         <p>Alínea los costos con la estrategia de crecimiento</p> 
+        <button class="service-boton"><a href="#">Ver más</a></button> 
     </article>
     <article class="item">
         <h3>Operaciones</h3>
         <p>¿Qué tan eficiente, rápida e inteligente podría llegar a ser esta área?</p> 
+        <button class="service-boton"><a href="#">Ver más</a></button> 
     </article>
     <article class="item">
         <h3>Estrategia</h3>
         <p>Genera valor a través de procesos sostenidos y persistentes</p> 
+        <button class="service-boton"><a href="#">Ver más</a></button> 
     </article>
     <article class="item">
         <h3>Aprendizaje y Desarrollo</h3>
-        <p>Mide tus procesos, identifica los fallos y corrige para generar mejora</p> 
+        <p>Mide tus procesos, identifica los fallos y corrige para generar mejora</p>
+        <button class="service-boton"><a href="#">Ver más</a></button> 
     </article>
     <article class="item">
         <h3>Transformación</h3>
-        <p>Cambia el trayecto de tu organización y adquiere objetivos extraordinarios</p> 
+        <p>Cambia el trayecto de tu organización y adquiere objetivos extraordinarios</p>
+        <button class="service-boton"><a href="#">Ver más</a></button> 
     </article>
     <article class="item">
         <h3>Sustentabilidad & Responsabilidad</h3>
-        <p>Aumenta el valor de tu organización generando procesos amigables, inteligentes y responsables</p> 
+        <p>Aumenta el valor de tu organización generando procesos amigables, inteligentes y responsables</p>
+        <button class="service-boton"><a href="#">Ver más</a></button> 
     </article>
     <article class="item">
         <h3>Procurement</h3>
-        <p>Reduce tus costos bases, mantén las ganancias y repite.</p> 
+        <p>Reduce tus costos bases, mantén las ganancias y repite.</p>
+        <button class="service-boton"><a href="#">Ver más</a></button> 
     </article>
 </section>
             <!--===== SERVICIOS =====-->
-            <section class="EXP section">
+            <section class="container-1 section">
                 <h2 class="section-title">Habilidades</h2>
 
                 <div class="EXP-container bd-grid">          
                     <div>
-                        <h2 class="EXP-subtitle">Conoce nuestras áreas de expertiz</h2>
+                        <h3 class="EXP-subtitle">Conoce nuestras áreas de expertiz</h3>
                         <p class="EXP-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit optio id vero amet, alias architecto consectetur error eum eaque sit.</p>
                         <div class="EXP-data">
                             <div class="EXP-names">
