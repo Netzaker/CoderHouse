@@ -64,7 +64,12 @@
     a {color:white}
     font-size: medium;
   }
-
+  .boxed-layout {
+    max-width: 90%;
+justify-content: center!important;
+border: solid 1px #781d12;
+margin: auto;
+  }
 /* RESPONSIVE */
 
 @mixin tablet {
@@ -90,7 +95,7 @@
   grid-template-columns:1fr 1fr;
   justify-content: center;
   align-items: center;
-  width: calc(100% - 2rem);
+  width: calc(100% - 1rem);
   margin-left: $mb-2;
   margin-right: $mb-2;
 }

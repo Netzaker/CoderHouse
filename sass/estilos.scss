@@ -3,6 +3,7 @@
 
 /* ROOT */
 * {
+    font-family: poppins!important;
     margin: 0;
     padding: 0;
 }
@@ -12,7 +13,10 @@
 @import "carrusel.scss";
 @import "section.scss";
 @import "about.scss";
-@import "footer.scss";
 @import "article.scss";
 @import "habilidades.scss";
+@import "proyectos.scss";
+@import "contact.scss";
+@import "footer.scss";
 @import "bootstrap.scss";
+@import "media.scss";

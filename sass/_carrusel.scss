@@ -1,5 +1,6 @@
+/* ===== CARRUSEL =====*/
+
 main {
-    section {
         .container-2 {
             z-index: $z-normal;
             width: 100%!important;
@@ -27,12 +28,12 @@ main {
 
             
     }
-}
 
+/* ===== COMPORTAMIENTO MOBLE CARRUSEL =====*/
 
 @media screen and (min-width: 768px) {
     main{
-        section{
+
             .container-2 {
                 .carousel-caption {
                     p {
@@ -43,4 +44,6 @@ main {
             }
         }
     }
-}
+
+
+/* ===== FIN CARRUSEL =====*/

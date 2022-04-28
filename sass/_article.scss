@@ -1,8 +1,9 @@
 main {
             .item {
+                
                 box-shadow: 0 0 15px #19727833;
                 height: 300px;
-                width: 300px;
+                width: 290px;
                 border: none;
                 margin-bottom: 30px;
                 padding-top: 2%;
@@ -18,7 +19,7 @@ main {
         flex-direction: row;
         align-content:space-between;
         flex-wrap: wrap;
-        padding: 5rem;
+        padding-top: 50px;
         justify-content: space-evenly;
         text-align: center;
         p{
