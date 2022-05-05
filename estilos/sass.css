@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* FONTS GOOGLE */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 /* ROOT */
@@ -54,12 +55,60 @@ img {
   margin-right: 1rem; }
 
 /* FIN ROOT */
+/* ===== COMPORTAMIENTO MOBILE GENERAL =====*/
+@media screen and (min-width: 1024px) {
+  .bd-grid {
+    margin-left: auto;
+    margin-right: auto; } }
+
+@media only screen and (max-width: 767px) {
+  h2 {
+    font-size: 1.5rem !important; }
+  .container-1 .carousel {
+    margin-top: 80px; } }
+
+@media only screen and (max-width: 767px) {
+  main section .carousel p {
+    display: none; }
+  main .section-2 .about__img img {
+    margin-top: -100px; }
+  main .container-2 {
+    margin-top: -100px; }
+  article h3 {
+    max-width: 90%;
+    padding: 0 0 0 0;
+    margin: auto;
+    text-align: center; }
+  article p {
+    max-width: 80%;
+    margin: auto;
+    text-align: center; }
+  .EXP-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -50px; }
+  .work__container {
+    margin-top: -50px;
+    display: flex;
+    flex-wrap: wrap; } }
+
+@media only screen and (max-width: 767px) {
+  main .section-2 .about__container {
+    display: flex;
+    flex-wrap: wrap; }
+  .texto-form {
+    margin-top: -4rem;
+    width: 300px;
+    margin-left: -20%;
+    text-align: center; } }
+
+/* USO DE CONDCIONALES MOBILE VERSION */
 .l-header {
   width: 100%;
   position: fixed;
   top: 0;
-  z-index: var(100);
-  z-index: 1;
+  z-index: 100;
+  z-index: 101;
   box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15); }
   .l-header .navbar {
     background-color: #283d3b;
@@ -115,7 +164,7 @@ main .section-title {
   position: relative;
   font-size: 2rem;
   color: #283d3b;
-  margin-top: 1rem;
+  margin-top: -49rem;
   padding-bottom: 100px;
   text-align: center; }
 
@@ -134,8 +183,7 @@ main .section-title::after {
   body {
     margin: 0; }
     body main .section-2 {
-      padding-top: 4rem;
-      padding-bottom: 3rem; }
+      /*               padding-bottom: 3rem; */ }
     body main .section-title {
       margin-bottom: 3rem;
       width: 100%; }
@@ -271,7 +319,7 @@ main .container-1 .EXP-container {
     border: 1.5px solid #283d3b;
     outline: none;
     margin-bottom: 2rem; }
-  .contact__container .contact__button {
+  .contact__container .contact__button, .contact__container .button-extend {
     cursor: pointer;
     margin-left: auto;
     display: block;
@@ -2443,13 +2491,11 @@ textarea.form-control-lg {
 .form-check-inline .form-check-input ~ .valid-feedback {
   margin-left: .5em; }
 
-.was-validated .input-group .form-control:valid, .input-group .form-control.is-valid, .was-validated
-.input-group .form-select:valid,
+.was-validated .input-group .form-control:valid, .input-group .form-control.is-valid, .was-validated .input-group .form-select:valid,
 .input-group .form-select.is-valid {
   z-index: 1; }
 
-.was-validated .input-group .form-control:valid:focus, .input-group .form-control.is-valid:focus, .was-validated
-.input-group .form-select:valid:focus,
+.was-validated .input-group .form-control:valid:focus, .input-group .form-control.is-valid:focus, .was-validated .input-group .form-select:valid:focus,
 .input-group .form-select.is-valid:focus {
   z-index: 3; }
 
@@ -2523,13 +2569,11 @@ textarea.form-control-lg {
 .form-check-inline .form-check-input ~ .invalid-feedback {
   margin-left: .5em; }
 
-.was-validated .input-group .form-control:invalid, .input-group .form-control.is-invalid, .was-validated
-.input-group .form-select:invalid,
+.was-validated .input-group .form-control:invalid, .input-group .form-control.is-invalid, .was-validated .input-group .form-select:invalid,
 .input-group .form-select.is-invalid {
   z-index: 2; }
 
-.was-validated .input-group .form-control:invalid:focus, .input-group .form-control.is-invalid:focus, .was-validated
-.input-group .form-select:invalid:focus,
+.was-validated .input-group .form-control:invalid:focus, .input-group .form-control.is-invalid:focus, .was-validated .input-group .form-select:invalid:focus,
 .input-group .form-select.is-invalid:focus {
   z-index: 3; }
 
@@ -8507,12 +8551,6 @@ fieldset:disabled .btn {
   .d-print-none {
     display: none !important; } }
 
-/* ===== COMPORTAMIENTO MOBILE GENERAL =====*/
-@media screen and (min-width: 1024px) {
-  .bd-grid {
-    margin-left: auto;
-    margin-right: auto; } }
-
 .section-clientes {
   margin-top: 150px; }
 
@@ -8530,3 +8568,63 @@ fieldset:disabled .btn {
     margin-top: -120px;
     justify-content: center;
     align-items: center; }
+
+/* condicionales. No sé bien qué uso le puedo dar, me gustaría usar los condicionales para el comportamiento responsive  */
+p {
+  color: rgba(25, 23, 23, 0.682) !important; }
+
+/* bucles para identificar el área de los container */
+.container-1 {
+  border: solid 1px #4e4e4e !important; }
+
+.container-2 {
+  border: solid 1px #4e4e4e !important; }
+
+/* bucles entre + el número, más delgado el font weight*/
+h1 {
+  font-weight: 700 !important; }
+
+h2 {
+  font-weight: 600 !important; }
+
+h3 {
+  font-weight: 500 !important; }
+
+h4 {
+  font-weight: 400 !important; }
+
+h5 {
+  font-weight: 300 !important; }
+
+h6 {
+  font-weight: 200 !important; }
+
+/* uso de each clases de "p" y sus respectivos colores*/
+.p-red {
+  color: red !important; }
+
+.p-white {
+  color: white !important; }
+
+.p-black {
+  color: black !important; }
+
+/* USO DE MAPAS */
+.bxl-instagram {
+  color: #55acee; }
+
+.bxl-linkedin {
+  color: #0062ff; }
+
+.bxl-facebook {
+  color: #0648d7; }
+
+/* extend */
+.button-extend {
+  margin: auto; }
+
+/*  mixin */
+.box-form {
+  height: 100%;
+  width: 100%;
+  background-color: #283d3b; }
